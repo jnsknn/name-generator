@@ -5,11 +5,11 @@ import java.util.Random;
 public class GenerateName {
 	
 	// Arrays containing vowels and consonants
-	private final static char[] vowels = {'a','e','i','o','u','y','ä','ö','å'};
+	private final static char[] vowels = {'a','e','i','o','u','y','Ã¤','Ã¶','Ã¥'};
     private final static char[] consonants = {'b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z'};
     
     // Newly created name will go to this variable
-    String newname;
+    String newname = "";
     
     // Constructor for creating a new name
     public GenerateName(String name){
@@ -105,9 +105,9 @@ public class GenerateName {
     	String fixedname = newname;
     	
     	fixedname = newname.replace("kc", "ck");
-    	fixedname = newname.replace("å", "o");
-    	fixedname = newname.replace("ä", "a");
-    	fixedname = newname.replace("ö", "o");
+    	fixedname = newname.replace("Ã¥", "o");
+    	fixedname = newname.replace("Ã¤", "a");
+    	fixedname = newname.replace("Ã¶", "o");
     	
     	return fixedname;
     }
