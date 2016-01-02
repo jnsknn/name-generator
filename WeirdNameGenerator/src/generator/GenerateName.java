@@ -29,7 +29,7 @@ public class GenerateName {
     	int j = 0;
     	int k = 0;
     	
-    	// For counter for exploring every character in given name string and replacing them with random ones
+    	// Loop for exploring every character in given name string and replacing them with random ones
     	for(i=0;i<oldname.length();i++){
     		
     		// If name string has two exactly same characters next to each other
